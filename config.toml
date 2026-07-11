@@ -9,6 +9,8 @@ build_search_index = false
 
 theme = "kita"
 
+[markdown.highlighting]
+theme = "one-dark-pro"
 
 [extra]
 # Put all your custom variables here

@@ -1,0 +1,12 @@
+<style>
+  .side-by-side { display: flex; }
+  .side-by-side > div { flex: 1; }
+  .side-by-side img { width: 100%; object-fit: contain; margin-top: 1rem; margin-bottom: 1rem; }
+  @media (max-width: 640px) {
+    .side-by-side { flex-direction: column; }
+  }
+</style>
+<div class="not-prose side-by-side">
+  <div>{% if img1 is defined %}<img style="padding-right: 14px" src="{{ img1 }}" alt="{{ alt1 | default(value='') }}">{% endif %}</div>
+  <div>{% if img2 is defined %}<img style="padding-right: 14px" src="{{ img2 }}" alt="{{ alt2 | default(value='') }}">{% endif %}</div>
+</div>
